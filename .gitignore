@@ -1,0 +1,5 @@
+.terraform
+.git
+*.tfstate
+*.backup
+vpc2
