@@ -13,7 +13,9 @@ variable "profile" {
   default     = "default"
 }
 
-resource "aws_instance" "example" {
-  ami           = "ami-0b898040803850657"
-  instance_type = "t2.micro"
+resource "aws_vpc" "test_vpc" {
+  cidr_block = "10.0.0.0/16"
+  tags {
+    Name = "test VPC"
+  }
 }
