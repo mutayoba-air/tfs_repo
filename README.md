@@ -10,9 +10,7 @@ states so as to get the vpc to create your resources in.
 Thus navigate to your VPC in AWS, get the vpc ID. In your template. Declare a
 vpc resource as bellow.
 
-resource "aws_vpc" "my_vpc" {
-  # Nothing in here
-}
+resource "aws_vpc" "my_vpc" {}
 
 i.e vpcid = x
 Save your file and run the following command
