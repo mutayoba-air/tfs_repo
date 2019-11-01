@@ -33,7 +33,7 @@ resource "aws_security_group" "allow_tlsA" {
     protocol  = "tcp"
     # Please restrict your ingress to only necessary IPs and ports.
     # Opening to 0.0.0.0/0 can lead to security vulnerabilities.
-    cidr_blocks = "10.0.1.0/24" # add a CIDR block here
+    cidr_blocks = ["10.0.1.0/24"] # add a CIDR block here
   }
 
   egress {
@@ -57,7 +57,7 @@ resource "aws_security_group" "allow_tlsB" {
     protocol  = "tcp"
     # Please restrict your ingress to only necessary IPs and ports.
     # Opening to 0.0.0.0/0 can lead to security vulnerabilities.
-    cidr_blocks = "10.0.2.0/24" # add a CIDR block here
+    cidr_blocks = ["10.0.2.0/24"] # add a CIDR block here
   }
 
   egress {
@@ -81,7 +81,7 @@ resource "aws_security_group" "allow_tlsC" {
     protocol  = "tcp"
     # Please restrict your ingress to only necessary IPs and ports.
     # Opening to 0.0.0.0/0 can lead to security vulnerabilities.
-    cidr_blocks = "10.0.3.0/24" # add a CIDR block here
+    cidr_blocks = ["10.0.3.0/24"] # add a CIDR block here
   }
 
   egress {
@@ -105,7 +105,7 @@ resource "aws_security_group" "allow_tlsD" {
     protocol  = "tcp"
     # Please restrict your ingress to only necessary IPs and ports.
     # Opening to 0.0.0.0/0 can lead to security vulnerabilities.
-    cidr_blocks = "10.0.4.0/24" # add a CIDR block here
+    cidr_blocks = ["10.0.4.0/24"] # add a CIDR block here
   }
 
   egress {
